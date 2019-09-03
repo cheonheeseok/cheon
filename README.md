@@ -5,4 +5,4 @@
 
 
 
-|URL:hkit.kr|URL:http://hkit.kr| 출처
+|URL:hkit.kr|URL:http://hkit.kr| 출처 IT 교육원|
