@@ -1,0 +1,135 @@
+ssh 키젠 만들기
+
+리눅스 ssh 키젠 만들기(ssh-keygen -t rsa(암호화) -b 4096(암호길이) -C 메일)
+
+git 홈페이지 ssh 설정 >> 리눅스 퍼블릭키 등록
+
+리눅스 해당 폴더 저장소 지정( : git init)
+
+git config user.name (유저 이름)
+
+git config user.email (git hub 메일)
+
+git config -l (설정값 확인)
+
+git remote add cheon git@github.com:cheonheeseok/cheon.git (원격 설정)
+
+git remote -v (설정 되었는지 확인)
+cheon   git@github.com:cheonheeseok/cheon.git (fetch)
+cheon   git@github.com:cheonheeseok/cheon.git (push)
+
+
+
+
+리눅스(우분투) GitHub 사용법
+
+
+
+git 설치
+
+$ sudo apt-get install git-core
+
+
+
+
+
+[!] 참고 : https://help.github.com/articles/set-up-git
+
+
+
+Github 개인 정보 등록
+
+$ sudo git config --global user.name "본인 계정 입력"
+
+$ sudo git config --global user.email "본인 메일 주소 입력"
+
+$ sudo git config --global color.ui "auto"
+
+
+
+
+
+[!] 참고 : https://help.github.com/articles/create-a-repo
+
+
+
+
+
+작업 폴더 생성
+
+$ sudo mkdir /works
+
+$cd /works
+
+
+
+
+
+github 저장소 복제
+
+$ sudo git clone https://github.com/dejavuwing/ngle.git
+
+
+
+
+
+원격 저장소 등록
+
+$ sudo git remote add origin https://github.com/dejavuwing/ngle.git
+
+$ sudo git fetch origin
+
+
+
+
+
+변경된 모든 파일 추가 (커밋 전에 필수 실행)
+
+$ sudo git add -A
+
+
+
+
+
+# 아래의 명령어를 입력후 엔터 치고 변경목록이 보이면 Ctrl+o 그리고 엔터 그리고 Ctrl+x 종료한다.
+
+$ sudo git commit
+
+
+
+
+
+커밋 메세지를 입력 (하지 않으면 안됨)
+
+$ sudo git commit -m "메세지입력"
+
+
+
+
+
+저장소에 올리기 (계정과 암호 물어보면 입력)
+
+$ sudo git push
+
+
+
+
+
+저장소 업데이트 (내려받기)
+
+$ sudo git pull
+
+
+
+
+
+git 상태 확인
+
+$ git status
+
+
+
+출처: https://dejavuwing.tistory.com/entry/Ubuntu-GitHub-사용법 [딸구씨]
+
+
+ 
